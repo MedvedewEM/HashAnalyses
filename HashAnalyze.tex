@@ -3,33 +3,9 @@
 \usepackage[cp1251]{inputenc}
 \usepackage[T2A]{fontenc}
 \usepackage[russian]{babel}
-\usepackage[left=2cm,right=2cm,top=4cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{amsmath}
 
-\title{
-	\textbf{Московский Государственный Университет\\ \large{имени М. В. Ломоносова}}
-	\\[1cm]
-	\textbf {
-		\Large{Механико-математический факультет}
-		\\
-		\large {Кафедра математических и компьютерных методов анализа}
-	}
-	\\[3cm]
-	\textbf{\Huge{Дипломная работа}}
-	\\
-	\Large{студента 601 группы}
-	\\
-	\Large{Медведева Егора Михайловича}
-	\\[2cm]
-	\textbf{\huge{Сравнительный анализ хэш-функций}}
-	\textbf{\huge{Comparative analyses of hash functions}}
-	\vfill
-	\begin{flushright}
-	Научный руководитель \\
-	профессор, д.ф.-м.н. Чубариков В. Н.\\
-	Рецензент\\
-	ФИО РЕЦЕНЗЕНТА И ТД
-	\end{flushright}
-}
+\input{TitlePage.tex}
 
 \makeatletter
 \renewcommand{\maketitle}{
@@ -46,8 +22,32 @@
 \makeatother
 
 \begin{document}
-\thispagestyle{empty}
-
+ 
 \maketitle
+
+\newgeometry{left=4.5cm,right=4.5cm,bindingoffset=0cm}
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Введение}
+
+\newpage
+\section{Постановка задачи и формулировка основных результатов}
+Применение.
+
+\newpage
+\section{Основные и вспомогательные определения}
+
+\input{BaseDefinitions.tex}
+
+\newpage
+\section{Атака дней рождений}
+
+\newpage
+\section{Принципы построения хеш-функций}
+
+\input{BuildingFunctions.tex}
 
 \end{document}
