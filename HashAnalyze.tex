@@ -21,6 +21,10 @@
 }
 \makeatother
 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}	
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+
 \begin{document}
  
 \maketitle
@@ -49,5 +53,15 @@
 \section{Принципы построения хеш-функций}
 
 \input{BuildingFunctions.tex}
+
+\newpage
+\section{Описание алгоритмов конкретных хеш-функций}
+
+\input{GostRAndMdDescription.tex}
+
+\newpage
+\section{Приложение А}
+
+\input{AppendixA.tex}
 
 \end{document}
